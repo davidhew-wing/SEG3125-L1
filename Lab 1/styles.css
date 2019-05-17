@@ -1,0 +1,32 @@
+.panel-row {
+    box-sizing: border-box;    
+    border: solid black 1px;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.panel-text {
+    text-align:center;
+    line-height:200px;
+    width:400px;
+    height:200px;
+}
+
+.bottom {
+    margin-bottom: 24px;
+}
+
+.logo {
+    height: 200px;
+}
+
+.list-pic {
+    width: 200px;
+}
+
+body {
+    align-content: center;
+    text-align: center;
+}
