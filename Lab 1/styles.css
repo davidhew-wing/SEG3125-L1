@@ -26,6 +26,10 @@
     width: 200px;
 }
 
+.menu-item {
+    margin-top: 12px;
+}
+
 body {
     align-content: center;
     text-align: center;

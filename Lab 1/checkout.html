@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Foodies</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <h2>Your Cart</h2>
+    <div class="panel-row">
+        <div class="menu-item">Chiken Fried Rice $15<button style="margin-left:8px;">Add to Cart</button></div>
+        <div class="menu-item">General Tso Chicken $10<button style="margin-left:8px;">Add to Cart</button></div>
+    </div>
+    <p>
+        Total Food: $25.00 <br />
+        HST: $3.25 <br />
+        Delivery Fee: $5.00 <br />
+        <b>Total: $33.25</b>
+    </p>
+    <form>
+        <p>Select payment method:</p>
+        <div>
+            <input type="radio" value="credit" name="pay">
+            <label>Credit</label>
+            <input type="radio" value="debit" name="pay">
+            <label>Debit</label>
+            <input type="radio" value="cash" name="pay">
+            <label>Cash Upon Delivery</label>
+        </div>
+        <div style="margin-top: 16px;">
+            <input type="input" placeholder="Your address...">
+        </div>
+        <div style="margin-top: 16px;">
+            <button type="submit">Place Order</button>
+        </div>
+    </form>
+</body>
+
+</html>
