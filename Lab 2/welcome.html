@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Foodies</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Foodies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="welcome.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="restaurant.html">Restaurants</a>
+                </li>
+            </ul>
+            <button class="btn btn-success" type="button"><a href="checkout.html">Your Order</a></button>
+        </div>
+    </nav>
+    <div class="container-fluid h-100">
+        <div class="row welcome-row">
+            <div class="jumbotron w-100">
+                <h1 class="display-4">Welcome to Foodies!</h1>
+                <p class="lead">Premier Food Devlivery in Ottawa!</p>
+                <hr class="my-4">
+                <p>Click here to Order from Ottawa classics.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Order Here</a>
+            </div>
+        </div>
+        <div class="row welcome-row">
+            <div id="demo" class="carousel slide w-100" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div style="background-color: #007BFF;" class="carousel-inner h-100">
+                    <h1 class="caro-header display-4">Our Favourite Dishes</h1>
+                    <div class="carousel-item active">
+                        <div class="card welcome-card" style="width: 60%; height: 40%">
+                            <div class="card-body">
+                                <h5 class="card-title">Kung Pao Chicken</h5>
+                                <p class="card-text">Classic, authentic, chicken. Spicy, full of flavour and the comes
+                                    with rice and a drink!</p>
+                                <a href="#" class="btn btn-primary">Order Here!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card welcome-card" style="width: 60%; height: 40%">
+                            <div class="card-body">
+                                <h5 class="card-title">Butter Chicken</h5>
+                                <p class="card-text">Classic Indian dish. Comes with Naan.</p>
+                                <a href="#" class="btn btn-primary">Order Here!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card welcome-card" style="width: 60%; height: 40%">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Shawarma Poutine</h5>
+                                <p class="card-text">Greate Shawarma on Poutin. What could be better?</p>
+                                <a href="#" class="btn btn-primary">Order Here!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

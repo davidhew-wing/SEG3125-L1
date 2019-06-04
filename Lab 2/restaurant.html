@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Foodies</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Foodies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="welcome.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="restaurant.html">Restaurants<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <button class="btn btn-success" type="button"><a href="checkout.html">Your Order</a></button>
+        </div>
+    </nav>
+    <div id="rest-collapse" class="container-fluid content-restaurant">
+        <div class="row">
+            <div class="display-3 header-restaurant">See what Ottawa has to offer!</div>
+        </div>
+        <div class="row cards-restaurant">
+            <div class="col-3 center">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#chinese"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Chinese
+                </button>
+            </div>
+            <div class="col-3 center">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#japanese"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Japanese
+                </button>
+            </div>
+            <div class="col-3 center">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#indian"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Indian
+                </button>
+            </div>
+            <div class="col-3 center">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Coffee"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Coffee
+                </button>
+            </div>
+            <div class="collapse coll-restaurant w-100" id="chinese" data-parent="#rest-collapse">
+                <div class="card">
+                    <img class="rest-card-img" src="images/asian_legend.png">
+                    <div class="progress rest-prog">
+                        <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">89%, say it is good</div>
+                    </div>
+                    <h5 class="rest-addy">123 China Street</h5>
+                    <h5 class="rest-addy">10:00AM - 11:30PM</h5>
+                    <h2 class="menu-header">Menu</h2>
+                    <div class="card-body container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                Meals
+                                <div class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Chicken Fried Rice $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        BBQ Pork $12.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Soy Chicken $9.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                Popular
+                                <div class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Deep Fried Squid Tentacles $5/00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Kung Pao Chicken $15.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Deep Fried Oyster $22.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse coll-restaurant w-100" id="japanese" data-parent="#rest-collapse">
+                <div class="card">
+                    <img class="rest-card-img" src="images/sokouden.jpg">
+                    <div class="progress rest-prog">
+                        <div class="progress-bar" role="progressbar" style="width: 64%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">64%, say it is good</div>
+                    </div>
+                    <h5 class="rest-addy">123 Japan Street</h5>
+                    <h5 class="rest-addy">10:00AM - 11:30PM</h5>
+                    <h2 class="menu-header">Menu</h2>
+                    <div class="card-body container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                Meals
+                                <div class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Salmon Bento Box $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Waygu Steak Dinner $100.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Omakase $75.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                Popular
+                                <div class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Salmon Sushi $4.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Bluefin tuna $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Classic Hand Roll $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse coll-restaurant w-100" id="indian" data-parent="#rest-collapse">
+                <div class="card">
+                    <img class="rest-card-img" src="images/indian_place.jpg">
+                    <div class="progress rest-prog">
+                        <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">92%, say it is good</div>
+                    </div>
+                    <h5 class="rest-addy">123 India Street</h5>
+                    <h5 class="rest-addy">10:00AM - 11:30PM</h5>
+                    <h2 class="menu-header">Menu</h2>
+                    <div class="card-body container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                Meals
+                                <div class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Butter Chicken $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Chicken Tiki Masala $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Chicken Vindaloo $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                Popular
+                                <div class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Butter Chicken $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Lamb Biryani $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Lamb Vindaloo $10.00
+                                        <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse coll-restaurant w-100" id="Coffee" data-parent="#rest-collapse">
+                    <div class="card">
+                        <img class="rest-card-img" src="images/coffee.png">
+                        <div class="progress rest-prog">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">100%, say it is good</div>
+                        </div>
+                        <h5 class="rest-addy">123 Coffee Street</h5>
+                        <h5 class="rest-addy">60:00AM - 3:30PM</h5>
+                        <h2 class="menu-header">Menu</h2>
+                        <div class="card-body container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    Meals
+                                    <div class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Salmon and Lox Bagel $10.00
+                                            <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Breakfast Bagel $4.00
+                                            <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Vegan Breakfast Bagel $7.00
+                                            <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    Popular
+                                    <div class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Americano $3.00
+                                            <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Latte $3.00
+                                            <button type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Iced Coffee $3.00
+                                            <button  type="button" class="btn btn-outline-success addOrderButton">Add to Order</button>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div id="cart-alert" class="alert alert-success alert-dismissable">
+            Added item to your order!
+     </div>
+</body>
+
+</html>
